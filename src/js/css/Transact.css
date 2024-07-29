@@ -1,0 +1,15 @@
+/* User.css */
+.paid {
+    background-color: green;
+    color: white;
+}
+
+.unpaid {
+    background-color: orange;
+    color: white;
+}
+
+.failed {
+    background-color: red;
+    color: white;
+}

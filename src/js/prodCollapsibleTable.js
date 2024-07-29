@@ -5,7 +5,7 @@ import * as Icon from 'react-bootstrap-icons';
 // Edit Button
 const EditButton = () => {
     const handleClick = () => {
-        window.location.href = "/editUserpage";
+        window.location.href = "/editProdprice";
     };
     return (
         <Button
@@ -87,11 +87,12 @@ const MoreActionsModal = ({ show, handleClose, handleDeleteShow }) => (
 
 const CollapsibleContent = ({ item, show, handleShow }) => (
     <tr className="">
-        <td colSpan="3" className='collapsibledata'>
+        <td colSpan="4" className='collapsibledata'>
             <Collapse in={show}>
                 <div className="p-3 bg-light border">
-                    <p><strong>First Name:</strong> {item.fname}</p>
-                    <p><strong>Last Name:</strong> {item.lname}</p>
+                    <p><strong>Name:</strong> {item.name}</p>
+                    <p><strong>Price:</strong> {item.price}</p>
+                    <p><strong>Status:</strong> {item.status}</p>
                     <div className='btncollapsible'>
                         <EditButton />
                         <ActiveButton />
@@ -141,8 +142,9 @@ const CollapsibleTable = ({ data = [] }) => {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th className="th1">First Name</th>
-                        <th>Last Name</th>
+                        <th className="th1">Name</th>
+                        <th>Price</th>
+                        <th>Status</th>
                         <th className="th2"></th>
                     </tr>
                 </thead>
@@ -150,8 +152,9 @@ const CollapsibleTable = ({ data = [] }) => {
                     {data.map((item, index) => (
                         <React.Fragment key={index}>
                             <tr className="tablerowdata" onClick={() => toggleCollapse(index)}>
-                                <td>{item.fname}</td>
-                                <td>{item.lname}</td>
+                                <td>{item.name}</td>
+                                <td>{item.price}</td>
+                                <td>{item.status}</td>
                                 <td>
                                     {collapsedRows[index] ? (
                                         <Icon.ChevronUp className='iconchev' />

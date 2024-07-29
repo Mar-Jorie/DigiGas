@@ -42,10 +42,10 @@ const SideNav = () => {
                     <Nav.Link as={Link} to="/user" onClick={closeSideNav}>
                         <Icon.People className='icon1' /> User
                     </Nav.Link>
-                    <Nav.Link href="#product-price" onClick={closeSideNav}>
+                    <Nav.Link href="/ProdPrice" onClick={closeSideNav}>
                         <Icon.TagsFill className='icon1' /> Product Price
                     </Nav.Link>
-                    <Nav.Link href="#transaction" onClick={closeSideNav}>
+                    <Nav.Link href="/Transact" onClick={closeSideNav}>
                         <Icon.ArrowLeftRight className='icon1' /> Transaction
                     </Nav.Link>
                     <Nav.Link href="#profile-settings" onClick={closeSideNav}>

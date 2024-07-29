@@ -7,24 +7,32 @@ import Cards from './card';
 import User from './User';
 import AddUser from './addUserpage';
 import EditUser from './editUserpage';
+import ProdPrice from './ProdPrice';
+import Transact from './Transact';
+import AddProdPrice from './addProdprice';
+import EditProdPrice from './editProdprice';
 
 
 
 function App() {
   return (
-    <Router basename="/DigiGas">
+    <Router >
     <div className='App'>
       <div className='headercontainer'>
         <Header />
       </div>
       <main className='content'>
-        <Routes>
+        <Routes basename="/DigiGas">
           
           <Route path="/" element={<Navigate to='/card' />} /> {/* Default route */}
           <Route path="/card" element={<Cards />} />
           <Route path="/user" element={<User />} />
           <Route path="/addUserpage" element={<AddUser />} />
           <Route path="/editUserpage" element={<EditUser />} />
+          <Route path="/ProdPrice" element={<ProdPrice />} />
+          <Route path="/addProdprice" element={<AddProdPrice />} />
+          <Route path="/editProdprice" element={<EditProdPrice />} />
+          <Route path="/Transact" element={<Transact />} />
         </Routes>
       </main>
     </div>
