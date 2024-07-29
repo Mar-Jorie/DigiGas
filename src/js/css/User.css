@@ -1,0 +1,292 @@
+.usertitle{
+    margin: auto
+  
+  }
+  
+  .usertitle h1{
+    padding: 25px 0px 15px 0px;
+    margin: auto;
+    font-size: 25px;
+    color: #353535;
+    font-weight: bolder;
+  }
+.searchFilter{
+    width:50%;
+    max-width:100%;
+    margin-bottom: 25px;
+    margin-top: 1px;
+    
+
+  }
+
+  /* SearchBar.css */
+
+.form-control {
+    border-radius: 20px;
+  }
+  
+  .input-group-text {
+    border-radius: 20px;
+  }
+  
+  .input-group {
+    border: 2px solid #FFB200;
+    border-radius: 20px;
+    padding: 0.5rem;
+  }
+  
+  .input-group .form-control {
+    border: none;
+  }
+  
+  .input-group .input-group-text {
+    background-color: transparent;
+    border: none;
+  }
+
+  .inputsearch::placeholder{
+   color: #353535;
+   opacity: 60%;
+  }
+
+  .inputsearch {
+    border: none; 
+    box-shadow: none;
+    border-radius: 0; 
+  }
+  
+  .inputsearch:focus {
+    border: none; 
+    box-shadow: none; 
+    outline: none; 
+  }
+  
+  .searchIcon{
+    color: #353535;
+    opacity: 60%;
+  }
+
+
+
+  /*Table*/
+  th{
+    background-color: #517EC1 !important;
+    height: 50px !important;
+    color: #FFFEF5 !important;
+    text-align: center;
+    
+
+  }
+
+  .th1{
+    border-radius: 10px 0 0 0;
+  }
+
+  .th2{
+    border-radius: 0 10px 0 0;
+  }
+
+
+  th,tr,td{
+    border: none !important;
+
+  }
+
+  td{
+    padding: 0 !important;
+    margin: 10px !important;
+    color: #353535 !important;
+   
+  }
+
+ .tablerowdata td{
+    padding: 10px !important;
+    color: #353535 !important;
+    text-align: center;
+  }
+
+  .tablerowdata {
+    background-color: #FFFEF5 !important;
+    border-bottom: #B6B6D4 1px solid !important;
+  }
+
+  .collapsibledata p{
+    margin: 0 10px 10px 10px !important;
+    color: #353535;
+  }
+
+  .collapsiblecontent{
+    margin-right: 10px !important;
+  }
+
+  .iconchev{
+    color: #FFB200;
+    width: 30px;
+    height: 20px;
+  }
+
+  /*Add Button*/
+
+  .add-user-button {
+    background-color: #ffc107; 
+    border-color: #ffc107;
+    color:#FFFEF5; 
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    position: fixed; 
+    bottom: 45px; 
+    right: 45px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .plusbtnicon{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .add-user-button:hover {
+    background-color: #ffb300ea; 
+    color: #FFFEF5;
+  }
+
+  .add-user-button:active{
+    background-color: #FFB200 !important;
+    color: #FFFEF5 !important;
+  }
+
+  /*Collapsible Buttons*/
+  .activebtn{
+    background-color: #517EC1 !important;
+    border: #517EC1 !important;
+  }
+
+  .btnsIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+.edituserbtn{
+    background-color: #FFB200 !important;
+    color: #FFFEF5 !important;
+    
+}
+.pencilbtnedit{
+    padding-right: 5px !important;
+}
+
+.btncollapsible{
+    margin: 5px !important;
+}
+.edituserbtn{
+    margin-right: 10px !important;
+    width: 100px;
+}
+
+.activebtn{
+    margin-right: 10px !important;
+    width: 100px;
+}
+
+.cancelbtn{
+    background-color: #FFB200 !important;
+    border: #FFB200 !important;
+    width: 150px;
+    margin-right: 10px !important;
+    border-radius: 10px !important;
+    height: 40px !important;
+}
+
+.delbtn{
+    background-color: #517EC1 !important;
+    border: #517EC1 !important;
+    width: 150px;
+    border-radius: 10px !important;
+    height: 40px !important;
+}
+.handactionIcon{
+    color: #FFB200 !important;
+    margin: 5px;
+ 
+}
+
+.bodydiv{
+    margin: auto;
+    padding: 20px;
+    background-color: #FFFEF5 !important;
+}
+  
+.titlemodalAction{
+    color: #353535 !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    margin: 10px !important;
+    padding: 10px !important;
+}
+
+.headermodal{
+    height: 50px;
+    background-color: #FFFEF5 !important;
+    border-radius: 10px;
+}
+
+.deleteconfirm{
+    background-color: #517EC1 !important;
+    border-color: #517EC1 !important;
+    width: 150px;
+    border-radius: 10px !important;
+    height: 40px !important;
+}
+.headermodalconfirm{
+    height: 100px;
+    background-color: #FFFEF5 !important;
+    border-radius: 10px;
+    text-align: center; 
+}
+.circle-bg {
+    background-color:#FFB200; /* Change this to your desired background color */
+    border-radius: 50%; /* Makes the background circular */
+    padding: 10px; /* Adjust padding to control the size of the circle */
+    display: inline-flex; /* Centers the icon within the circle */
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Change this to your desired icon color */
+}
+.deletetitle{
+    color: #353535;
+    font-size: 20px;
+    
+}
+
+.bodydivconfirm{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #FFFEF5 !important;
+    border-radius: 10px;
+}
+.headermodalconfirmed{
+    height: 170px;
+    background-color: #FFFEF5 !important;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.okbtn{
+    background-color: #517EC1;
+    border-color: #517EC1;
+    width: 200px;
+    border-radius: 10px !important;
+    height: 40px !important;
+}
+
+.okbtn:hover{
+    background-color: #517EC1;
+    border-color: #517EC1;
+    width: 200px;
+    border-radius: 10px !important;
+    height: 40px !important;
+}

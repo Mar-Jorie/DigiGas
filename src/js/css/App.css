@@ -1,0 +1,305 @@
+main{
+  min-height: 100vh;
+  background-color: #F5F5FA;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.headercontainer{
+  background-color: #FEFEFE;
+  min-height: 100%;
+}
+
+.dashboardtitle{
+  margin: auto
+
+}
+
+.dashboardtitle h1{
+  padding: 25px 0px 15px 0px;
+  margin: auto;
+  font-size: 25px;
+  color: #353535;
+  font-weight: bolder;
+
+}
+.filterdateContainer1{
+  width:47%;
+  max-width:100%;
+  margin-bottom: 25px;
+}
+
+.iconcalendar{
+  margin-top: -5px;
+  opacity: 70%;
+}
+.placeholderdate{
+  margin: 5px;
+  color: #353535;
+}
+.dateRange{
+  padding: 5px 5px 5px 10px;
+  margin: auto;
+  border-radius: 10px;
+  min-width:100%;
+  max-width:100%;
+  border: 1.25px solid #FFB200;
+  color: #353535;
+}
+
+.dateRange::placeholder {
+  color: #aaaaaa;
+  font-style: italic;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(61, 58, 54, 0.1);
+}
+
+.dateRange:focus {
+  border-color: #ffb300da;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+
+/*Designs For Dashboard Cards*/
+
+.cardcontents{
+  margin: 5px auto 20px auto;
+  width: 93%;
+  padding: 10px 20px 10px 20px;
+  height:100vh;
+}
+
+.revenueIcon, .valueRevenue p, .titleRevenue, .transactionIcon, .valueTransact p, .titleTransact{
+  color: #FFFEF5;
+}
+
+ .revenueCard, .transactCard{
+  width:99%;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  
+}
+
+.card{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.containerRevenue{
+  background-color: #FFB200;
+  border-radius: 10px;
+
+}
+
+.containerTransact{
+  background-color: #517EC1;
+  border-radius: 10px;
+
+  
+}
+
+.revenueIcon, .transactionIcon{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  float: left;
+
+}
+.titleRevenue{
+  margin-top: -25px;
+  padding: 0px;
+  display: block;
+  font-size: 20px;
+}
+
+.titleTransact{
+  margin-top: -25px;
+  padding: 0px;
+  display: block;
+  font-size: 20px;
+
+}
+
+.pesosign, .number{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.valueTransact p{
+  display: inline-block;
+  margin-top: -15px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+/*Design For Chart One*/
+
+
+.monthlyCard{
+  width: 100%  !important;
+  margin:25px 20px 10px 0px  !important;
+
+}
+
+.graphRevenue{
+  background-color: #517EC1  !important;
+  border: none !important;
+  color:#F5F5FA  !important;
+  padding: 25px  !important;
+  font-size: 16px !important;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0px !important;
+}
+
+.graphOneContent{
+  background-color: #F5F5FA !important;
+  width: 100%!important ;
+  height: 100% !important;
+}
+
+/*CSS For 2nd Graph Filter*/
+.secondContainer{
+  margin-top: 25px;
+}
+.paymentoptioncontainer, .filterdateContainer{
+  min-width:50%;
+  max-width:100%;
+
+}
+
+input[type="date"].dateRange2{
+  padding: 10px;
+  border-radius: 10px;
+  min-width:100%;
+  max-width:100%;
+  border: 1.25px solid #FFB200;
+  color: #353535;
+}
+
+
+input[type="date"].dateRange2::placeholder {
+  color: #aaaaaa;
+  font-style: italic;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(61, 58, 54, 0.1);
+}
+
+input[type="date"].dateRange2:focus {
+  border-color: #ffb300da;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.paymentoption{
+  padding: 10px !important;
+  border-radius: 10px !important;
+  width:100% !important;
+  border: 1.25px solid #FFB200 !important;
+  color: #353535 !important;
+}
+
+.paymentoption:focus{
+  border-color: #ffb300da !important;
+  outline: none !important;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6) !important;
+}
+
+
+/*PopUp Calendar Filter*/
+
+.intervaltitle{
+  text-align: left !important;
+  color: #353535 !important;
+  margin: 20px 0 20px 10px !important;
+}
+
+.modal-content{
+  width: 80% !important;
+  margin: auto;
+  margin-top: 60px;
+
+}
+.groupintervalbtns{
+  margin-left: 10px;
+}
+
+.btnclose{
+  margin: 20px 0 0px 30px !important; 
+  width: 80%;
+  border-radius: 10px !important;
+  background-color: #FFB200 !important;
+  color: #F5F5FA !important;
+  font-weight: bold !important;
+  border: none !important;
+  height: 40px !important;
+  
+}
+.custom-calendar{
+  border: none !important;
+  border-bottom: #9A9995 2px solid !important;
+  border-radius: 0 !important;
+
+  .react-datepicker__header {
+    background-color: #FFFEF5;
+    border-bottom: none;
+    border-radius: 10px;
+    color: #353535;
+  }
+
+  .react-datepicker__current-month {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #353535;
+  }
+  .react-datepicker__day-name{
+    opacity: 50%;
+  }
+
+  .react-datepicker__day-name,
+  .react-datepicker__day {
+    width: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0.166rem;
+    color: #353535;
+  }
+
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    background-color: #FFB200 !important;
+    color: #FFFEF5;
+    border-radius: 10px;
+  }
+  .react-datepicker__day--today {
+    font-weight: bold;
+    color: #FFFEF5;
+    
+  }
+  
+}
+
+/*Side Nav*/
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/*Search*/
+
+.input-group{
+  border-radius: 10px !important;
+}
