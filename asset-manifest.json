@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DigiGas/static/css/main.10d3f93f.css",
+    "main.js": "/DigiGas/static/js/main.6e2c8674.js",
+    "static/js/453.ffad2c40.chunk.js": "/DigiGas/static/js/453.ffad2c40.chunk.js",
+    "static/media/logo.png": "/DigiGas/static/media/logo.0a22a47b195cc028eb66.png",
+    "index.html": "/DigiGas/index.html",
+    "main.10d3f93f.css.map": "/DigiGas/static/css/main.10d3f93f.css.map",
+    "main.6e2c8674.js.map": "/DigiGas/static/js/main.6e2c8674.js.map",
+    "453.ffad2c40.chunk.js.map": "/DigiGas/static/js/453.ffad2c40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10d3f93f.css",
+    "static/js/main.6e2c8674.js"
+  ]
+}
