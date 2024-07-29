@@ -12,13 +12,14 @@ import EditUser from './editUserpage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/DigiGas">
     <div className='App'>
       <div className='headercontainer'>
         <Header />
       </div>
       <main className='content'>
         <Routes>
+          
           <Route path="/" element={<Navigate to='/card' />} /> {/* Default route */}
           <Route path="/card" element={<Cards />} />
           <Route path="/user" element={<User />} />
