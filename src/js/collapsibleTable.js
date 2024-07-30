@@ -1,33 +1,29 @@
 import React, { useState } from 'react';
 import { Table, Collapse, Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
 
 // Edit Button
 const EditButton = () => {
-    const handleClick = () => {
-        window.location.href = "/editUserpage";
-    };
     return (
         <Button
-            variant="warning"
-            className="edituserbtn"
-            onClick={handleClick}
+            as={Link}
+            to="/editUserpage"
+            className="edituserbtn custom-warning"
         >
-            <Icon.PencilFill className='pencilbtnedit' />Edit
+            <Icon.PencilFill className='pencilbtnedit' /> Edit
         </Button>
     );
 };
 
 // Active Button
+
 const ActiveButton = () => {
-    const handleClick = () => {
-        window.location.href = "";
-    };
     return (
         <Button
-            variant="primary"
-            className="activebtn"
-            onClick={handleClick}
+            as={Link}
+            to=""
+            className="activebtn btn-primary"
         >
             Active
         </Button>

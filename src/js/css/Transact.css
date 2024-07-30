@@ -1,15 +1,95 @@
-/* User.css */
-.paid {
-    background-color: green;
-    color: white;
+.status-paid {
+    background-color: #7AC127 !important;
+    color: #FFFEF5 !important;
 }
 
-.unpaid {
-    background-color: orange;
-    color: white;
+.status-failed {
+    background-color: #A82E2E !important;
+    color: #FFFEF5 !important;
 }
 
-.failed {
-    background-color: red;
-    color: white;
+.status-unpaid {
+    background-color: #FFB200 !important;
+    color: #FFFEF5 !important;
+
+}
+
+.status-label.status-paid {
+    background-color: #7AC127;
+    color: #FFFEF5;
+    padding: 0.2rem 0.5rem;
+}
+
+.status-label.status-failed {
+    background-color: #A82E2E;
+    color: #FFFEF5;
+    padding: 0.2rem 0.5rem;
+}
+
+.status-label.status-unpaid {
+    background-color: #FFB200;
+    color: #FFFEF5;
+    padding: 0.2rem 0.5rem;
+}
+
+#status-color {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#status {
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    display: block;
+    padding: 0px 10px 10px 10px !important;
+}
+
+.statusth {
+    width: 5% !important;
+}
+
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+
+.refnotd,
+.customertd,
+.chevtd {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.refnotd,
+.customertd {
+    min-width: 100px;
+}
+
+.chevtd {
+    min-width: 50px;
+}
+
+.collapsibledata {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    color: #333;
+    width: 100%;
+}
+
+.iconchev {
+    cursor: pointer;
 }

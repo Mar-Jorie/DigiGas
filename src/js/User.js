@@ -4,6 +4,7 @@ import './css/User.css';
 import Row from 'react-bootstrap/Row';
 import SearchBar from './Searchbar';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons'; 
 import CollapsibleTable from './collapsibleTable';
 
@@ -17,20 +18,17 @@ const userData = [
 
 //Add Button
 const AddButton = () => {
-  const handleClick = () => {
-    // Redirect to the adduser page
-    window.location.href = "/addUserpage"; // Link to Page
-  };
   return (
-    <Button
-      variant="warning" 
-      className="add-user-button" 
-      onClick={handleClick}
-    >
-     <Icon.Plus className='plusbtnicon'/>
-    </Button>
+      <Button
+          as={Link}
+          to="/addUserpage"
+          className="add-user-button"
+      >
+        <Icon.Plus className='plusbtnicon' />
+      </Button>
   );
 };
+
 
 
 const User = () => {

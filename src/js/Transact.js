@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/User.css';
+import './css/Transact.css';
 import Row from 'react-bootstrap/Row';
 import CollapsibleTable from './transactCollapsibleTable';
 import Calendar from './appcalendarFilter';

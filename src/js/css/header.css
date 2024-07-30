@@ -1,11 +1,10 @@
-
-.iconnnav{
+button .iconnnav{
     height: 30px;
     width: 30px;
-    float: none;
-    position: absolute;
-    margin: 10px 0px 0px 10px ;
-    color: #FFB200; 
+    float: none !important;
+    position: absolute !important;
+    margin: 0px 0px 0px 10px ;
+    color: #FFB200 !important; 
 }
 
 .logoheader{
@@ -14,9 +13,6 @@
     display: block;
     margin:auto;
 }
-
-
-/* App.css */
 
 .app {
     display: flex;

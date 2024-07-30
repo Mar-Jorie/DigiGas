@@ -3,39 +3,38 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/User.css';
 import * as Icon from 'react-bootstrap-icons';
 import { Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 
+
+//Cancel Button
 const CancelButton = () => {
-  const handleClick = () => {
-    window.location.href = "/User";
-  };
   return (
-    <Button
-      variant="warning"
-      className="cancelbtnmodal"
-      onClick={handleClick}
-    >
-      Cancel
-    </Button>
+      <Button
+          as={Link}
+          to="/User"
+          className="cancelbtnmodal"
+      >
+          Cancel
+      </Button>
   );
 };
 
+//Confirm success
 const Okclose = () => {
-  const handleClick = () => {
-    window.location.href = "/User";
-  };
   return (
-    <Button
-      variant="warning"
-      className="okbtn"
-      onClick={handleClick}
-    >
-      Confirm
-    </Button>
+      <Button
+          as={Link}
+          to="/User"
+          className="okbtn"
+      >
+          Confirm
+      </Button>
   );
 };
+
 
 // Confirm Button Component
 const ConfirmButton = ({ onClick }) => (

@@ -1,3 +1,4 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-datepicker/dist/react-datepicker.css';
 import Card from 'react-bootstrap/Card';
@@ -17,13 +18,11 @@ function Cards() {
         <h1 className='dashboardText'>Dashboard</h1>
         <div className='filterdateContainer1'>
           <Calendar />
-
-
         </div>
       </div>
+
+
       <Row xs={1} md={2} className="g-4">
-
-
         <div className='revenueCard'>
           <Card className='card'>
             <Card.Body className='containerRevenue'>

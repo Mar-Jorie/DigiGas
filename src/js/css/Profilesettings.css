@@ -1,0 +1,61 @@
+.subsContainer {
+    background-color: #517EC1 !important;
+    border: none !important;
+    color: #F5F5FA !important;
+    padding: 20px !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    height: 100px;
+    border-radius: 10px !important;
+    width: 100%;
+}
+
+.maincontents {
+    width: 100%;
+}
+
+.maincard {
+    width: 410px;
+}
+
+.maincard {
+    margin: 0;
+}
+
+.creditcardicon {
+    width: 50px;
+    height: 50px;
+    margin: 7px 0 20px 0;
+    display: inline-block;
+
+}
+
+.premiumtitle {
+    display: inline-block;
+    margin: 6px 0 20px 10px;
+    position: absolute;
+}
+
+.premiumdetails {
+    display: inline-block;
+    text-align: right;
+    margin: 20px 0 20px 175px !important;
+    position: absolute;
+}
+
+.premiumtitle1,
+.premiumtitle2,
+.premiumdetails1,
+.premiumdetails2 {
+    margin: 2px;
+}
+
+.premiumtitle2,
+.premiumdetails1,
+.premiumdetails2 {
+    font-weight: normal;
+}
+
+.premiumtitle1 {
+    font-size: 25px;
+}

@@ -3,6 +3,7 @@ import './css/ProductPrice.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as Icon from 'react-bootstrap-icons';
 import { Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
@@ -10,35 +11,33 @@ import Form from 'react-bootstrap/Form';
 // Correctly importing the image
 import imageupload from './assets/imageupload.png';
 
+
+//Cancel Button
 const CancelButton = () => {
-    const handleClick = () => {
-        window.location.href = "/ProdPrice";
-    };
     return (
         <Button
-            variant="warning"
+            as={Link}
+            to="/ProdPrice"
             className="cancelbtnmodal"
-            onClick={handleClick}
         >
             Cancel
         </Button>
     );
 };
 
+//Confirm success
 const Okclose = () => {
-    const handleClick = () => {
-        window.location.href = "/ProdPrice";
-    };
     return (
         <Button
-            variant="warning"
+            as={Link}
+            to="/ProdPrice"
             className="okbtn"
-            onClick={handleClick}
         >
             Confirm
         </Button>
     );
 };
+
 
 // Confirm Button Component
 const ConfirmButton = ({ onClick }) => (

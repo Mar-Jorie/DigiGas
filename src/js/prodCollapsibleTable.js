@@ -1,38 +1,36 @@
 import React, { useState } from 'react';
 import { Table, Collapse, Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
+import './css/User.css';
 
 // Edit Button
 const EditButton = () => {
-    const handleClick = () => {
-        window.location.href = "/editProdprice";
-    };
     return (
         <Button
-            variant="warning"
-            className="edituserbtn"
-            onClick={handleClick}
+            as={Link}
+            to="/editProdprice"
+            className="edituserbtn custom-warning"
         >
-            <Icon.PencilFill className='pencilbtnedit' />Edit
+            <Icon.PencilFill className='pencilbtnedit' /> Edit
         </Button>
     );
 };
 
 // Active Button
+
 const ActiveButton = () => {
-    const handleClick = () => {
-        window.location.href = "";
-    };
     return (
         <Button
-            variant="primary"
-            className="activebtn"
-            onClick={handleClick}
+            as={Link}
+            to=""
+            className="activebtn btn-primary"
         >
             Active
         </Button>
     );
 };
+
 
 // Confirmation Modal
 const ConfirmationModal = ({ show, handleClose, handleConfirm }) => (

@@ -53,6 +53,7 @@
   border: none;
   box-shadow: none;
   border-radius: 0;
+  height: 30px !important;
 }
 
 .inputsearch:focus {
@@ -91,24 +92,32 @@ th,
 tr,
 td {
   border: none !important;
-
+  padding: 10px !important;
 }
 
 td {
   padding: 0 !important;
   margin: 10px !important;
   color: #353535 !important;
+}
 
+tr {
+  background-color: #f1f1f1;
 }
 
 .tablerowdata td {
-  padding: 10px !important;
-  color: #353535 !important;
+  color: #353535;
   text-align: center;
+  padding: 10px !important;
+}
+
+.refnotd,
+.customertd,
+.chevtd {
+  padding: 10px !important;
 }
 
 .tablerowdata {
-  background-color: #FFFEF5 !important;
   border-bottom: #B6B6D4 1px solid !important;
 }
 
@@ -129,20 +138,32 @@ td {
 
 /*Add Button*/
 
-.add-user-button {
-  background-color: #ffc107;
-  border-color: #ffc107;
-  color: #FFFEF5;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  bottom: 45px;
-  right: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a.add-user-button {
+  background-color: #ffc107 !important;
+  ;
+  border-color: #ffc107 !important;
+  ;
+  color: #FFFEF5 !important;
+  ;
+  width: 70px !important;
+  height: 70px !important;
+  ;
+  border-radius: 50% !important;
+  ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+  ;
+  position: fixed !important;
+  ;
+  bottom: 45px !important;
+  ;
+  right: 45px !important;
+  ;
+  display: flex !important;
+  ;
+  justify-content: center !important;
+  ;
+  align-items: center !important;
+  ;
 }
 
 .plusbtnicon {
@@ -150,20 +171,22 @@ td {
   height: 100px;
 }
 
-.add-user-button:hover {
-  background-color: #ffb300ea;
-  color: #FFFEF5;
+a.add-user-button:hover {
+  background-color: #ffb300ea !important;
+  color: #FFFEF5 !important;
+  border: none !important;
 }
 
-.add-user-button:active {
+a.add-user-button:active {
   background-color: #FFB200 !important;
   color: #FFFEF5 !important;
 }
 
 /*Collapsible Buttons*/
-.activebtn {
+a.activebtn {
   background-color: #517EC1 !important;
   border: #517EC1 !important;
+  color: #F5F5FA !important;
 }
 
 .btnsIcon {
@@ -172,14 +195,26 @@ td {
   cursor: pointer;
 }
 
-.edituserbtn {
+button .edituserbtn {
   background-color: #FFB200 !important;
   color: #FFFEF5 !important;
+}
 
+.custom-warning {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+  color: white !important;
+}
+
+.custom-warning:hover {
+  background-color: #ffcc00 !important;
+  border-color: #ffcc00 !important;
+  color: white !important;
 }
 
 .pencilbtnedit {
   padding-right: 5px !important;
+  color: #F5F5FA !important;
 }
 
 .btncollapsible {
@@ -191,9 +226,10 @@ td {
   width: 100px;
 }
 
-.activebtn {
+a.btn-primary {
   margin-right: 10px !important;
   width: 100px;
+  color: #F5F5FA !important;
 }
 
 .cancelbtn {
@@ -256,17 +292,12 @@ td {
 
 .circle-bg {
   background-color: #FFB200;
-  /* Change this to your desired background color */
   border-radius: 50%;
-  /* Makes the background circular */
   padding: 10px;
-  /* Adjust padding to control the size of the circle */
   display: inline-flex;
-  /* Centers the icon within the circle */
   align-items: center;
   justify-content: center;
   color: #fff;
-  /* Change this to your desired icon color */
 }
 
 .deletetitle {
@@ -290,7 +321,7 @@ td {
   text-align: center;
 }
 
-.okbtn {
+a.okbtn {
   background-color: #517EC1;
   border-color: #517EC1;
   width: 200px;
@@ -299,9 +330,9 @@ td {
   margin-top: 15px;
 }
 
-.okbtn:hover {
-  background-color: #517EC1;
-  border-color: #517EC1;
+a.okbtn:hover {
+  background-color: #517EC1 !important;
+  border-color: #517EC1 !important;
   width: 200px;
   border-radius: 10px !important;
   height: 40px !important;
@@ -367,7 +398,6 @@ td {
   border-color: rgba(255, 178, 0, 0.5) !important;
 }
 
-/* Ensure the icon is inside the input field */
 .position-relative {
   position: relative;
 }
@@ -378,7 +408,6 @@ td {
 
 input[type="password"] {
   padding-right: 40px;
-  /* Adjust based on icon size */
 }
 
 .eyeslash,
@@ -389,11 +418,12 @@ input[type="password"] {
   color: rgba(53, 53, 53, 0.6);
 }
 
-.groupbuttons{
+.groupbuttons {
   margin: 35px 0 0 0;
 
 }
-.cancelbtnmodal{
+
+a.cancelbtnmodal {
   height: 44px !important;
   color: #F5F5FA;
   background-color: #FFB200;
@@ -401,14 +431,16 @@ input[type="password"] {
   border-radius: 10px !important;
   margin-right: 10px !important;
   margin-bottom: 25px;
+  border-color: #FFB200 !important;
 }
 
-.cancelbtnmodal:hover{
-  color: #F5F5FA;
-  background-color: #FFB200;
+a.cancelbtnmodal:hover {
+  color: #F5F5FA !important;
+  background-color: #FFB200 !important;
+  border-color: #FFB200 !important;
 }
 
-.confirmbtn{
+.confirmbtn {
   height: 44px !important;
   background-color: #517EC1 !important;
   border: #517EC1 !important;
@@ -417,27 +449,11 @@ input[type="password"] {
   margin-bottom: 25px;
 }
 
-.okbtn{
+a.okbtn {
   background-color: #517EC1 !important;
   border: #517EC1 !important;
   width: 200px;
   border-radius: 10px !important;
   margin-bottom: 25px;
   color: #F5F5FA !important;
-}
-
-/* User.css */
-.paid {
-  background-color: green;
-  color: white;
-}
-
-.unpaid {
-  background-color: orange;
-  color: white;
-}
-
-.failed {
-  background-color: red;
-  color: white;
 }
