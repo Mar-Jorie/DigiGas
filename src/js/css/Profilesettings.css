@@ -14,9 +14,7 @@
     width: 100%;
 }
 
-.maincard {
-    width: 410px;
-}
+
 
 .maincard {
     margin: 0;
@@ -58,4 +56,152 @@
 
 .premiumtitle1 {
     font-size: 25px;
+}
+
+.uprofile {
+    position: absolute;
+    margin-left: 420px;
+}
+
+.titleprof {
+    color: #353535;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+.subsmaincont {
+    margin-bottom: 20px;
+}
+
+.profcontainer {
+    padding: 0px;
+ 
+
+
+}
+.card{
+    background-color: transparent !important;
+}
+
+.imgcontainer {
+    margin-top: 15px;
+}
+
+.profilepicture {
+    width: 100%;
+
+}
+
+.info-container {
+    margin-top: 20px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.labelprofile {
+    font-weight: bold;
+    width: 150px;
+    /* Set a fixed width for labels */
+    text-align: left;
+    margin-right: 20px;
+    /* Space between label and input */
+}
+
+.input-box,
+.inpname,
+.inpemail,
+.inppass,
+.inpmap {
+    flex: 1;
+    width: 100%;
+    /* Ensure full width */
+    padding: 10px 0px 10px 7px;
+    margin-left: 10px;
+    color: #353535;
+    height: 40px;
+    /* Set a consistent height */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
+.inpname,
+.inpemail,
+.inppass,
+.inpmap {
+    display: inline-block;
+    width: auto;
+    /* Ensure it wraps the content */
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+.edit-btn,
+.change-btn,
+.save-btned,
+.save-btn,
+.cancel-btn {
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    color: #353535;
+    cursor: pointer;
+}
+
+.save-btned {
+    color: #7AC127 !important;
+}
+
+.save-btn,
+.cancel-btn {
+    margin-top: 10px;
+}
+
+.password-edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    /* Make sure it fills the container */
+}
+
+.password-edit-container input {
+    margin-bottom: 10px;
+    width: 100%;
+    /* Ensure inputs fill the width */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.save-btn {
+    background-color: #517EC1;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none !important;
+    border-color: transparent;
+}
+
+.cancel-btn {
+    background-color: #FFB200;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none !important;
+    border-color: transparent;
+}
+
+.profcard {
+    margin: 0;
 }

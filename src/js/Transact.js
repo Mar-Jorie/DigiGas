@@ -25,6 +25,7 @@ const User = () => {
             <Row xs={1} md={1} className="g-4">
                 <div className='revenueCard'>
                     <CollapsibleTable data={userData} />
+               
                 </div>
             </Row>
         </div>

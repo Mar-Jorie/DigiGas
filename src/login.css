@@ -1,0 +1,133 @@
+body {
+    background-color: #F5F5FA;
+}
+
+.cardlogin {
+    background-color: #FFFAF5 !important;
+}
+
+.input-group-text {
+    border-right: none;
+}
+
+.logform {
+    border-left: rgba(53, 53, 53, 0.4) solid 1px !important;
+    background-color: transparent !important;
+}
+
+.inptgrplog {
+    border-color: rgba(53, 53, 53, 0.4) !important;
+}
+
+.btn-primary {
+    background-color: #517EC1;
+    border-color: #517EC1;
+}
+
+.btn-primary:hover {
+    background-color: #517EC1;
+    border-color: #517EC1;
+}
+
+.logoimg {
+    margin-top: 5px;
+}
+
+.diginame {
+    color: #517EC1;
+}
+
+.gasname {
+    color: #FFB200;
+}
+
+.apptitle {
+    margin-top: -10px !important;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.form-group,
+.logintitle {
+    color: #353535 !important;
+}
+
+.logintitle {
+    font-size: 20px;
+}
+
+.form-group::placeholder {
+    color: #353535 !important;
+}
+
+.btnlogin {
+    margin: 10px 50px 25px 50px !important;
+    width: 245px !important;
+    height: 40px !important;
+}
+
+.btnlogin:active {
+    background-color: #517ec1a4 !important;
+    border: none !important;
+}
+
+
+.form-control:focus {
+    border-left: none;
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.showhideicon {
+    color: rgba(53, 53, 53, 0.5);
+}
+
+.modalexclaicon {
+    width: 100px !important;
+    height: 50px !important;
+    margin-top: 25px;
+}
+
+.bodymodal {
+    height: 270px !important;
+}
+
+.h5modalmsg {
+    color: #353535;
+    font-weight: bold;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.btnconfirmclose {
+    width: 50%;
+    margin-top: 25px;
+}
+
+.btnconfirmclose:focus {
+    background-color: #517ec1a4 !important;
+    border: none !important;
+}
+
+.h6modalmsg {
+    margin-top: -5px;
+    font-weight: normal;
+}
+
+.signup-link {
+    color: #FFB200 !important;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+    font-weight: bold !important;
+    color: #FFB200 !important;
+    background-color: transparent !important;
+}
+
+.signupacc{
+    color: #353535;
+    margin-bottom: 15px !important;
+}

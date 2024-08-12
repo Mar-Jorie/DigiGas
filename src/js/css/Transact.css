@@ -93,3 +93,8 @@
 .iconchev {
     cursor: pointer;
 }
+
+.uprofile{
+    border: 1px solid;
+    margin-left: 100px;
+}

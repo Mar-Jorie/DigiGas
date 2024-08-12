@@ -1,13 +1,16 @@
 main{
-  min-height: 100vh;
-  background-color: #F5F5FA;
+  min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+}
 
+.content, .App{
+  background-color: #F5F5FA;
 }
 
 .headercontainer{
   background-color: #FEFEFE;
   min-height: 100%;
+  margin-bottom: 0;
 }
 
 .dashboardtitle{
@@ -65,7 +68,7 @@ main{
 /*Designs For Dashboard Cards*/
 
 .cardcontents{
-  margin: 5px auto 20px auto;
+  margin: 5px auto 0 auto;
   width: 93%;
   padding: 10px 20px 10px 20px;
   height:100vh;

@@ -95,7 +95,7 @@ const AddProd = () => {
                         <Form.Control size="text" className='fname' type="text" placeholder="Enter First Name" />
                     </label>
                     <label className='llname'>
-                        <p className='plname'>Last Name</p>
+                        <p className='plname'>Price</p>
                         <Form.Control size="text" className='price' type="number" placeholder="0.00" />
                     </label>
 

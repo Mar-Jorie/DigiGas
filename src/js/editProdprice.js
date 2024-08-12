@@ -94,7 +94,7 @@ const EditProd = () => {
                         <Form.Control size="text" className='fname' type="text" value={'Diesel Fuel'} placeholder="Enter First Name" />
                     </label>
                     <label className='llname'>
-                        <p className='plname'>Last Name</p>
+                        <p className='plname'>Price</p>
                         <Form.Control size="text" className='price' type="number" value={'200.00'} placeholder="0.00" />
                     </label>
 

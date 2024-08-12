@@ -11,30 +11,36 @@ import ProdPrice from './ProdPrice';
 import AddProdPrice from './addProdprice';
 import EditProdPrice from './editProdprice';
 import Transact from './Transact';
-import PofileSetting from './profSettings';
-
+import ProfileSetting from './profSettings';
+import Login from '../login';
 
 function App() {
   return (
     <Router basename='/DigiGas'>
       <div className='App'>
-        <div className='headercontainer'>
-          <Header />
-        </div>
-        <main className='content'>
-          <Routes>
-            <Route path="/" element={<Navigate to="/card" />} /> {/* Default route */}
-            <Route path="card" element={<Cards />} />
-            <Route path="user" element={<User />} />
-            <Route path="addUserpage" element={<AddUser />} />
-            <Route path="editUserpage" element={<EditUser />} />
-            <Route path="ProdPrice" element={<ProdPrice />} />
-            <Route path="addProdprice" element={<AddProdPrice />} />
-            <Route path="editProdprice" element={<EditProdPrice />} />
-            <Route path="Transact" element={<Transact />} />
-            <Route path="profSettings" element={<PofileSetting />} />
-          </Routes>
-        </main>
+        {/* Header will be shown on all routes except "/login" */}
+        <Routes>
+          <Route path="/*" element={
+            <div>
+              <Header />
+              <main className='content'>
+                <Routes>
+                  <Route path="card" element={<Cards />} />
+                  <Route path="user" element={<User />} />
+                  <Route path="addUserpage" element={<AddUser />} />
+                  <Route path="editUserpage" element={<EditUser />} />
+                  <Route path="ProdPrice" element={<ProdPrice />} />
+                  <Route path="addProdprice" element={<AddProdPrice />} />
+                  <Route path="editProdprice" element={<EditProdPrice />} />
+                  <Route path="Transact" element={<Transact />} />
+                  <Route path="profSettings" element={<ProfileSetting />} />
+                </Routes>
+              </main>
+            </div>
+          } />
+          <Route path="login" element={<Login />} /> {/* No Header for Login */}
+          <Route path="/" element={<Navigate to="/login" />} /> {/* Default route */}
+        </Routes>
       </div>
     </Router>
   );

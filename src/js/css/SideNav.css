@@ -1,5 +1,5 @@
 body.sidenav-open {
-  transition: margin-left  linear;
+  transition: margin-left linear;
   margin-left: 250px;
 
 }

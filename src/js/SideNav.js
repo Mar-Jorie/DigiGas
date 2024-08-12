@@ -52,7 +52,7 @@ const SideNav = () => {
                     <Nav.Link as={Link} to="/profSettings" onClick={closeSideNav} className='menus'>
                         <Icon.PersonFillGear className='icon1' /> Profile Settings
                     </Nav.Link>
-                    <Nav.Link as={Link} to="#logout" className='logoutbtn menus' onClick={closeSideNav} >
+                    <Nav.Link as={Link} to="../login" className='logoutbtn menus' onClick={closeSideNav} >
                         <Icon.BoxArrowRight className='icon1' /> Logout
                     </Nav.Link>
                 </Nav>
