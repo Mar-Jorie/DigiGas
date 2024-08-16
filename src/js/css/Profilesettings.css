@@ -37,7 +37,7 @@
 .premiumdetails {
     display: inline-block;
     text-align: right;
-    margin: 20px 0 20px 175px !important;
+    margin: 20px 0 20px 140px !important;
     position: absolute;
 }
 
@@ -45,13 +45,14 @@
 .premiumtitle2,
 .premiumdetails1,
 .premiumdetails2 {
-    margin: 2px;
+    margin: 0px;
 }
 
 .premiumtitle2,
 .premiumdetails1,
 .premiumdetails2 {
     font-weight: normal;
+    font-size: 15px;
 }
 
 .premiumtitle1 {
@@ -73,6 +74,8 @@
 
 .subsmaincont {
     margin-bottom: 20px;
+    margin-left: -30px !important;
+    
 }
 
 .profcontainer {
