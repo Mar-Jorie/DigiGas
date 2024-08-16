@@ -17,6 +17,7 @@ body {
 
 .inptgrplog {
     border-color: rgba(53, 53, 53, 0.4) !important;
+    border: 1px solid;
 }
 
 .btn-primary {
@@ -56,8 +57,8 @@ body {
     font-size: 20px;
 }
 
-.form-group::placeholder {
-    color: #353535 !important;
+.form-control::placeholder {
+    color: rgba(53, 53, 53, 0.5) !important;
 }
 
 .btnlogin {
@@ -127,7 +128,7 @@ body {
     background-color: transparent !important;
 }
 
-.signupacc{
+.signupacc {
     color: #353535;
     margin-bottom: 15px !important;
 }

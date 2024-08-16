@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css';
 import { EnvelopeFill, LockFill, EyeFill, EyeSlashFill, ExclamationCircleFill } from 'react-bootstrap-icons';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import logo from './js/assets/logo-no-name.png';
 import { Modal, Button } from 'react-bootstrap';
 
@@ -89,11 +89,10 @@ const Login = () => {
                 </form>
                 {/* Sign up link */}
                 <div className="text-center mt-1">
-                    <p className="mb-0 signupacc">Don't have an account? <a href="/signup" className="signup-link">Sign up</a></p>
+                    <p className="mb-0 signupacc">Don't have an account? <Link to="/signup" className="signup-link">Sign Up</Link></p>
                 </div>
             </div>
 
-            {/* Modal for error messages */}
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                 <Modal.Body className="text-center bodymodal">
                     <div className="text-warning">

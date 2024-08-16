@@ -224,6 +224,8 @@ button .edituserbtn {
 .edituserbtn {
   margin-right: 10px !important;
   width: 100px;
+  background-color: #FFB200 !important;
+  border: #FFB200;
 }
 
 a.btn-primary {

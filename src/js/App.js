@@ -13,33 +13,38 @@ import EditProdPrice from './editProdprice';
 import Transact from './Transact';
 import ProfileSetting from './profSettings';
 import Login from '../login';
+import Signup from '../signup';
 
 function App() {
   return (
     <Router basename='/DigiGas'>
       <div className='App'>
-        {/* Header will be shown on all routes except "/login" */}
+        {/* Conditionally render Header */}
         <Routes>
-          <Route path="/*" element={
-            <div>
-              <Header />
-              <main className='content'>
-                <Routes>
-                  <Route path="card" element={<Cards />} />
-                  <Route path="user" element={<User />} />
-                  <Route path="addUserpage" element={<AddUser />} />
-                  <Route path="editUserpage" element={<EditUser />} />
-                  <Route path="ProdPrice" element={<ProdPrice />} />
-                  <Route path="addProdprice" element={<AddProdPrice />} />
-                  <Route path="editProdprice" element={<EditProdPrice />} />
-                  <Route path="Transact" element={<Transact />} />
-                  <Route path="profSettings" element={<ProfileSetting />} />
-                </Routes>
-              </main>
-            </div>
-          } />
-          <Route path="login" element={<Login />} /> {/* No Header for Login */}
-          <Route path="/" element={<Navigate to="/login" />} /> {/* Default route */}
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route
+            path="*"
+            element={
+              <>
+                <Header />
+                <main className='content'>
+                  <Routes>
+                    <Route path="card" element={<Cards />} />
+                    <Route path="user" element={<User />} />
+                    <Route path="addUserpage" element={<AddUser />} />
+                    <Route path="editUserpage" element={<EditUser />} />
+                    <Route path="ProdPrice" element={<ProdPrice />} />
+                    <Route path="addProdprice" element={<AddProdPrice />} />
+                    <Route path="editProdprice" element={<EditProdPrice />} />
+                    <Route path="Transact" element={<Transact />} />
+                    <Route path="profSettings" element={<ProfileSetting />} />
+                  </Routes>
+                </main>
+              </>
+            }
+          />
         </Routes>
       </div>
     </Router>
